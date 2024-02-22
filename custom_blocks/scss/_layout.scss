@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+      max-width: 750px;
+  }
+  @media (min-width: 992px) {
+      max-width: 970px;
+  }
+  @media (min-width: 1200px) {
+      max-width: 1140px;
+  }
+}
+.container_lg {
+  max-width: 954px;
+}
+.container_min {
+  max-width: 410px;
+}
+body,html {
+  min-height: 100%;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center !important;
+}
+.pl-0 {
+  padding-left: 0px !important;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-sm-6,
+.col-sm-4,
+.col-sm-8,
+.col-md-6,
+.col-md-4,
+.col-md-8,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-10 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row-min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.col-min {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.order-1 {
+  order: 1;
+}
+.order-12 {
+  order: 12;
+}
+@media (min-width: 576px) {
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+  .col-lg-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+  .order-lg-1 {
+    order: 1;
+  }
+  .order-lg-12 {
+    order: 12;
+  }
+  .text-md-end {
+    text-align: right;
+  }
+}
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+tbody::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+ // Track 
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+// Handle 
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: #1E1E1E;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #1E1E1E;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.35px;
+  @media (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 18px;
+  }
+}
+.text {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
+  @media (max-width: 991.98px) {
+    font-size: 16px;
+  }
+}
+a {
+  color: #0872BA;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.color_white {
+  color: #ffffff !important;
+}
+.color_black {
+  color: #000924 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.w-100 {
+  width: 100%;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.border-none {
+  border: none !important;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-05 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+  @media (max-width: 767.98px) {
+    margin-bottom: 20px;
+  }
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
