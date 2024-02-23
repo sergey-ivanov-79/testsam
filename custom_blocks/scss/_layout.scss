@@ -21,6 +21,9 @@ img {
       max-width: 1140px;
   }
 }
+.container_xl {
+  max-width: 1000px;
+}
 .container_lg {
   max-width: 954px;
 }
@@ -35,6 +38,9 @@ body,html {
 }
 .text-center {
   text-align: center !important;
+}
+.text-right {
+  text-align: right;
 }
 .pl-0 {
   padding-left: 0px !important;
@@ -68,6 +74,8 @@ body,html {
   padding-right: 15px;
   padding-left: 15px;
 }
+.col-6,
+.col-12,
 .col-sm-6,
 .col-sm-4,
 .col-sm-8,
@@ -175,6 +183,9 @@ body,html {
 .justify-content-center {
   justify-content: center;
 }
+.justify-content-between {
+  justify-content: space-between;
+}
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -195,7 +206,8 @@ tbody::-webkit-scrollbar {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: #1E1E1E;
 }
-.title {
+.title,
+.h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 22px;
@@ -210,8 +222,15 @@ tbody::-webkit-scrollbar {
     font-size: 18px;
   }
 }
+.text-lg {
+  font-size: 18px;
+}
+.text-md {
+  color: #231F20;
+  font-size: 16px;
+  letter-spacing: 0.35px;
+}
 .text {
-  font-family: "Open Sans";
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -223,16 +242,28 @@ tbody::-webkit-scrollbar {
     font-size: 16px;
   }
 }
+.text_min {
+  font-size: 12px;
+}
 a {
   color: #0872BA;
   transition: all 0.3s;
   text-decoration: none;
 }
 .color_white {
-  color: #ffffff !important;
+  color: $white !important;
+}
+.color_dark_black {
+  color: $dark_black !important;
 }
 .color_black {
-  color: #000924 !important;
+  color: $black !important;
+}
+.color_gray {
+  color: $gray !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
 }
 .fw-700 {
   font-weight: 700 !important;
@@ -243,8 +274,26 @@ a {
 .text-underline {
   text-decoration: underline;
 }
+.border-bottom {
+  border-bottom: 1px solid #E1E1E1;
+}
 .border-none {
   border: none !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mr-10 {
+  margin-right: 10px;
+  @media (max-width: 991.98px) {
+    margin-right: 5px;
+  }
 }
 .mr-20 {
   margin-right: 20px;
@@ -255,14 +304,26 @@ a {
 .mt-10 {
   margin-top: 10px;
 }
+.mb-0 {
+  margin-bottom: 0px !important;
+}
 .mb-05 {
   margin-bottom: 5px;
 }
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-15 {
+  margin-bottom: 15px;
+}
 .mb-20 {
   margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-30 {
+  margin-bottom: 30px;
 }
 .mb-40 {
   margin-bottom: 40px;
@@ -270,7 +331,13 @@ a {
     margin-bottom: 20px;
   }
 }
+.l-spacing-normal {
+  letter-spacing: normal;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.gap-20 {
+  gap: 20px;
 }

@@ -153,3 +153,46 @@
     font-weight: 400;
   }
 }
+.payment_info {
+  border-radius: 4px;
+  background: #CEE741;
+  padding: 23px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  @media (max-width: 575.98px) {
+    display: block;
+    padding: 15px;
+  }
+  &__seats {
+    width: 63px;
+    min-width: 63px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #231F20;
+    color: #CEE741;
+    font-size: 20px;
+    margin-right: 20px;
+    @media (max-width: 575.98px) {
+      margin-right: 15px;
+    }
+  }
+}
+.confirm_block {
+  display: flex;
+  align-items: center;
+  @media (max-width: 575.98px) {
+    margin-bottom: 15px;
+  }
+}
+.extend_block {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  @media (max-width: 575.98px) {
+    margin-bottom: 0px;
+    text-align: right;
+  }
+}
