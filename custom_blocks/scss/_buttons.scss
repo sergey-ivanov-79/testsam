@@ -17,6 +17,11 @@
   background-color: transparent;
   letter-spacing: 0.35px;
   border: none;
+  &[disabled],
+  &.disabled {
+    opacity: 0.4;
+    cursor: no-drop;
+  }
   &_black {
     background-color: #000000;
     color: #ffffff !important;
@@ -26,32 +31,43 @@
     &:hover {
       background-color: #3C4043;
     }
-    &[disabled] {
-      background: #C3C5C7;
-      color: #ABABAB !important;
-      cursor: no-drop;
-      .st_1 {
-        stroke: #ABABAB;
-      }
-    }
   }
   &_blue {
     background-color: #206BAA;
     color: #ffffff !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
     &:hover {
       background-color: #135287;
     }
-    &[disabled] {
-      background: #A1BACF;
-      cursor: no-drop;
+  }
+  &_green {
+    background-color: #43A047;
+    color: #ffffff !important;
+    .st_1 {
+      stroke: #ffffff;
+    }
+    &:hover {
+      background-color: #319035;
       .st_1 {
-        stroke: #ABABAB;
+        stroke: #ffffff;
       }
     }
   }
+  &_gray {
+    background-color: #808080;
+    color: #ffffff !important;
+    &:hover {
+      background-color: #808080;
+    }
+  }
   &_big {
-    width: 100%;
-    max-width: 260px;
+    max-width: 100%;
+    width: 260px;
+  }
+  &_min {
+    max-width: 100%;
+    width: 150px;
   }
   &_radius {
     border-radius: 4px;

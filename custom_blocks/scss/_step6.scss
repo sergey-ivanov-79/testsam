@@ -1,0 +1,114 @@
+.exam_information {
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  border: 1px dashed #E1E1E1;
+  background: #FFF;
+  padding: 10px 20px;
+  @media (max-width: 991.98px) {
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media (max-width: 991.98px) {
+      width: 50%;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    &:nth-child(2) {
+      &:after {
+        @media (max-width: 991.98px) {
+          display: none;
+        }
+      }
+    }
+    &:nth-child(3) {
+      &:after {
+        @media (max-width: 991.98px) {
+          display: none;
+        }
+      }
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+    }
+    &:after {
+      position: absolute;
+      right: 0;
+      content: '';
+      width: 1px;
+      height: 85px;
+      background-image: url('../img/icon/icon_line.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+.number_ticket {
+  min-width: 110px;
+}
+.white_box_min {
+  background: $white;
+  padding: 20px;
+  border-radius: 4px;
+}
+.wrapper_upload {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: -7px;
+}
+.cancel_link {
+  color: #F44336;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .fill_1 {
+    fill: #F44336;
+    transition: all 0.3s;
+  }
+  &:hover {
+    color: #F31100;
+    .fill_1 {
+      fill: #F31100;
+    }
+  }
+  &[disabled],
+  &.disabled {
+    opacity: 0.4;
+  }
+}
+.participant_block {
+  position: relative;
+}
+.passport_user {
+  max-width: 270px;
+}
+.upload_right_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
