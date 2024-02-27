@@ -1314,6 +1314,10 @@ a:hover {
   border: 1px solid #43A047;
   background: #C9F0CB;
 }
+.attention_block_white {
+  border: 1px solid #E0E0E0;
+  background: #FFF;
+}
 .attention_block_mwnone {
   max-width: none;
 }
