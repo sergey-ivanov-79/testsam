@@ -1,0 +1,61 @@
+.wrapper_exam_dates {
+  background-color: #fff;
+  padding: 40px 50px;
+  @media (max-width: 1200px) {
+    padding: 30px 40px;
+  }
+  @media (max-width: 767.98px) {
+    padding: 20px;
+  }
+}
+.exam_dates {
+  margin-bottom: 40px;
+  &__line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF;
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    @media (max-width: 991.98px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (max-width: 1200px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media (max-width: 767.98px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      @media (max-width: 991.98px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.location_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  background: #ECEFF1;
+  color: #AEAEAE;
+  font-family: "Open Sans";
+  font-size: 15px;
+  letter-spacing: 0.35px;
+  margin-right: 12px;
+}

@@ -230,9 +230,13 @@ tbody::-webkit-scrollbar {
   font-style: normal;
   line-height: normal;
 }
-.h2 {
+.h2,
+.text-xl {
   color: #252525;
   font-size: 24px;
+  @media (max-width: 991.98px) {
+    font-size: 22px;
+  }
 }
 .title,
 .h3 {
