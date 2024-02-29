@@ -8,40 +8,50 @@
   line-height: 1.4;
   margin-top: 50px;
   margin-bottom: 50px;
-}
-.bg_gray {
-  background: #F4F4F4;
-}
-.box_white_block {
-  background-color: #ffffff;
-  padding: 35px 50px;
-  @media (max-width: 991.98px) {
-    padding: 25px 30px;
+  .bg_gray {
+    background: #F4F4F4;
   }
-  @media (max-width: 767.98px) {
-    padding: 20px;
+  .box_white_block {
+    background-color: #ffffff;
+    padding: 35px 50px;
+    @media (max-width: 991.98px) {
+      padding: 25px 30px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 20px;
+    }
   }
-}
-.to_back {
-  color: #0872BA;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 158.334%;
-  letter-spacing: 0.35px;
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 30px;
-  svg {
-      margin-right: 8px;
+  .to_back {
+    color: #0872BA;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.334%;
+    letter-spacing: 0.35px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    svg {
+        margin-right: 8px;
+    }
   }
-}
-.level_block {
-  width: 85px;
-  min-width: 85px;
-  @media (max-width: 991.98px) {
-    width: 55px;
-    min-width: 55px;
+  .level_block {
+    width: 85px;
+    min-width: 85px;
+    @media (max-width: 991.98px) {
+      width: 55px;
+      min-width: 55px;
+    }
   }
+  @import "variables";
+  @import "layout";
+  @import "table";
+  @import "buttons";
+  @import "step2";
+  @import "step3";
+  @import "step4";
+  @import "step5";
+  @import "step6";
+  @import "forms";
 }
