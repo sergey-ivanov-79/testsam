@@ -909,12 +909,12 @@ a:hover {
   padding: 3px 10px;
 }
 
-.btn:focus {
+.btn_custom:focus {
   outline: none !important;
   box-shadow: none;
 }
 
-.btn {
+.btn_custom {
   cursor: pointer !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -930,61 +930,61 @@ a:hover {
   letter-spacing: 0.35px;
   border: none;
 }
-.btn[disabled], .btn.disabled {
+.btn_custom[disabled], .btn_custom.disabled {
   opacity: 0.4;
   cursor: no-drop;
 }
-.btn_black {
+.btn_custom_black {
   background-color: #000000;
   color: #ffffff !important;
 }
-.btn_black .st_1 {
+.btn_custom_black .st_1 {
   stroke: #ffffff;
 }
-.btn_black:hover {
+.btn_custom_black:hover {
   background-color: #3C4043;
 }
-.btn_blue {
+.btn_custom_blue {
   background-color: #206BAA;
   color: #ffffff !important;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.btn_blue:hover {
+.btn_custom_blue:hover {
   background-color: #135287;
 }
-.btn_green {
+.btn_custom_green {
   background-color: #43A047;
   color: #ffffff !important;
 }
-.btn_green .st_1 {
+.btn_custom_green .st_1 {
   stroke: #ffffff;
 }
-.btn_green:hover {
+.btn_custom_green:hover {
   background-color: #319035;
 }
-.btn_green:hover .st_1 {
+.btn_custom_green:hover .st_1 {
   stroke: #ffffff;
 }
-.btn_gray {
+.btn_custom_gray {
   background-color: #808080;
   color: #ffffff !important;
 }
-.btn_gray:hover {
+.btn_custom_gray:hover {
   background-color: #808080;
 }
-.btn_big {
+.btn_custom_big {
   max-width: 100%;
   width: 260px;
 }
-.btn_min {
+.btn_custom_min {
   max-width: 100%;
   width: 150px;
 }
-.btn_radius {
+.btn_custom_radius {
   border-radius: 4px;
 }
-.btn_h_52 {
+.btn_custom_h_52 {
   min-height: 52px;
 }
 
@@ -1260,8 +1260,8 @@ a:hover {
   }
 }
 .exam_dates__item {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 @media (max-width: 1200px) {
   .exam_dates__item {
