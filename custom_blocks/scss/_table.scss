@@ -20,6 +20,10 @@
     &:first-child {
       text-align: left;
     }
+    &_min {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
   &__td {
     padding: 45px;
@@ -251,5 +255,13 @@
     align-items: center;
     justify-content: center;
     padding: 3px 10px;
+  }
+}
+.module_info {
+  display: flex;
+  &__item {
+    width: 33.33%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

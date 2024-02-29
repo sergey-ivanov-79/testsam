@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.bg_gray {
+  background: #F4F4F4;
+}
+
 .osdrs {
   /***
       The new CSS reset - version 1.11.2 (last updated 15.11.2023)
@@ -94,9 +98,6 @@
 }
 .osdrs ::-webkit-details-marker {
   display: none;
-}
-.osdrs .bg_gray {
-  background: #F4F4F4;
 }
 .osdrs .box_white_block {
   background-color: #ffffff;
@@ -597,6 +598,10 @@
 .osdrs .table__th:first-child {
   text-align: left;
 }
+.osdrs .table__th_min {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .osdrs .table__td {
   padding: 45px;
   text-align: center;
@@ -815,6 +820,14 @@
   align-items: center;
   justify-content: center;
   padding: 3px 10px;
+}
+.osdrs .module_info {
+  display: flex;
+}
+.osdrs .module_info__item {
+  width: 33.33%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .osdrs .btn_custom:focus {
   outline: none !important;
