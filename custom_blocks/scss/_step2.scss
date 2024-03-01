@@ -55,6 +55,9 @@
     @media (max-width: 991.98px) {
       margin-right: 10px;
     }
+    @media (max-width: 767.98px) {
+      margin-right: 5px;
+    }
   }
   &__edit_block {
     @media (max-width: 767.98px) {
@@ -70,6 +73,10 @@
     margin-right: 10px;
     font-size: 20px;
   }
+  @media (max-width: 767.98px) {
+    margin-right: 7px;
+    font-size: 18px;
+  }
 }
 .all_price {
   font-size: 22px;
@@ -82,6 +89,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media (max-width: 767.98px) {
+    font-size: 14px;
+  }
 }
 .calendar_block {
   border-radius: 4px;

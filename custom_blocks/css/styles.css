@@ -144,6 +144,7 @@
 .osdrs img {
   vertical-align: middle;
   border-style: none;
+  margin: 0;
 }
 .osdrs .container {
   width: 100%;
@@ -398,10 +399,16 @@
     font-size: 20px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .osdrs .title,
   .osdrs .h3 {
     font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .osdrs .title,
+  .osdrs .h3 {
+    font-size: 17px;
   }
 }
 .osdrs .text-lg {
@@ -410,6 +417,11 @@
 @media (max-width: 1200px) {
   .osdrs .text-lg {
     font-size: 17px;
+  }
+}
+@media (max-width: 767.98px) {
+  .osdrs .text-lg {
+    font-size: 16px;
   }
 }
 .osdrs .text-md {
@@ -422,6 +434,11 @@
     font-size: 15px;
   }
 }
+@media (max-width: 767.98px) {
+  .osdrs .text-md {
+    font-size: 14px;
+  }
+}
 .osdrs .text {
   font-size: 15px;
   font-style: normal;
@@ -431,6 +448,11 @@
 @media (max-width: 1200px) {
   .osdrs .text {
     font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .osdrs .text {
+    font-size: 13px;
   }
 }
 .osdrs .text_min {
@@ -978,6 +1000,11 @@
   }
 }
 @media (max-width: 767.98px) {
+  .osdrs .exam_modul__svg {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 767.98px) {
   .osdrs .exam_modul__edit_block {
     text-align: right;
   }
@@ -993,6 +1020,12 @@
     font-size: 20px;
   }
 }
+@media (max-width: 767.98px) {
+  .osdrs .candidate_info {
+    margin-right: 7px;
+    font-size: 18px;
+  }
+}
 .osdrs .all_price {
   font-size: 22px;
   font-weight: 700;
@@ -1004,6 +1037,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 767.98px) {
+  .osdrs .text_md {
+    font-size: 14px;
+  }
 }
 .osdrs .calendar_block {
   border-radius: 4px;
