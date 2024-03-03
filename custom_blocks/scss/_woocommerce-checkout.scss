@@ -1,0 +1,29 @@
+.woocommerce-page.woocommerce-checkout {
+  .checkout {
+    display: flex;
+    margin: 0 -15px;
+    .col2-set {
+      width: 50%;
+      order: 1;
+      padding: 0 15px;
+      .col1,
+      .col2 {
+        width: 100%;
+      }
+    }
+    .woocommerce-checkout-review-order {
+      width: 50%;
+      .woocommerce-checkout-payment {
+        margin: 0 15px;
+      }
+      .osdrs {
+        .col-md-6 {
+          width: 100%;
+        }
+        .cart_block__inner {
+          max-width: 512px;
+        }
+      }
+    }
+  }
+}
