@@ -69,6 +69,9 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     background: #ffffff url(../img/png/arrow_down.png) no-repeat right 10px center;
+    @media (max-width: 479.98px) {
+      background-position: right 3px center;
+    }
   }
   &__textarea {
     height: 115px;

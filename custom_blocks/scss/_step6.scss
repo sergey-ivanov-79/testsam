@@ -7,6 +7,8 @@
   padding: 10px 20px;
   @media (max-width: 991.98px) {
     flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
   }
   &__item {
     position: relative;
@@ -65,15 +67,19 @@
   }
 }
 .number_ticket {
-  min-width: 110px;
+  max-width: 70px;
 }
 .white_box_min {
   background: $white;
   padding: 20px;
   border-radius: 4px;
+  @media (max-width: 479.98px) {
+    padding: 10px;
+  }
 }
 .wrapper_upload {
   display: flex;
+  flex-direction: column;
   gap: 8px;
   align-items: center;
   margin-top: -7px;

@@ -681,6 +681,7 @@
   font-size: 16px;
   font-weight: 600;
   padding-left: 24px;
+  min-width: 76px;
   width: 76px;
   height: 48px;
   appearance: none;
@@ -688,6 +689,13 @@
   -moz-appearance: none;
   background: url("../img/icon/select_arrow.svg") no-repeat right 15px center;
   transition: all 0.3s;
+}
+@media (max-width: 991.98px) {
+  .osdrs .form_select {
+    min-width: 60px;
+    background-position: right 10px center;
+    padding-left: 10px;
+  }
 }
 .osdrs .wrapper_table_min {
   margin-top: 30px;
@@ -1425,6 +1433,9 @@
     width: 100%;
   }
 }
+.osdrs .information_block .white_box {
+  padding: 24px;
+}
 @media (min-width: 1200px) {
   .osdrs .wrapper_left_block {
     padding-right: 20px;
@@ -1486,25 +1497,35 @@
     padding: 25px 20px;
   }
 }
+.osdrs .white_box_min {
+  padding: 20px;
+}
+@media (max-width: 991.98px) {
+  .osdrs .white_box_min {
+    padding: 15px;
+  }
+}
 .osdrs .detaials_block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .osdrs .detaials_block__item {
-  width: 33.33%;
-}
-@media (max-width: 991.98px) {
-  .osdrs .detaials_block__item {
-    width: 50%;
-    margin-bottom: 20px;
-  }
+  width: 50%;
+  margin-bottom: 20px;
 }
 @media (max-width: 575.98px) {
   .osdrs .detaials_block__item {
     width: 100%;
     margin-bottom: 20px !important;
   }
+}
+.osdrs .detaials_block__item a {
+  font-size: 16px;
+  word-break: break-word;
+}
+.osdrs .detaials_block__item .text-lg {
+  font-size: 16px;
 }
 .osdrs .wrapper_candidates {
   width: 100%;
@@ -1574,6 +1595,7 @@
 }
 .osdrs .candidates__module {
   width: 47%;
+  min-width: 310px;
 }
 .osdrs .candidates__edit {
   width: 15%;
@@ -1704,6 +1726,8 @@
 @media (max-width: 991.98px) {
   .osdrs .exam_information {
     flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .osdrs .exam_information__item {
@@ -1759,15 +1783,21 @@
   display: none;
 }
 .osdrs .number_ticket {
-  min-width: 110px;
+  max-width: 70px;
 }
 .osdrs .white_box_min {
   background: #ffffff;
   padding: 20px;
   border-radius: 4px;
 }
+@media (max-width: 479.98px) {
+  .osdrs .white_box_min {
+    padding: 10px;
+  }
+}
 .osdrs .wrapper_upload {
   display: flex;
+  flex-direction: column;
   gap: 8px;
   align-items: center;
   margin-top: -7px;
@@ -1877,6 +1907,11 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   background: #ffffff url(../img/png/arrow_down.png) no-repeat right 10px center;
+}
+@media (max-width: 479.98px) {
+  .osdrs .form__select {
+    background-position: right 3px center;
+  }
 }
 .osdrs .form__textarea {
   height: 115px;
@@ -2027,4 +2062,10 @@ form.woocommerce-checkout .woocommerce-checkout-review-order .osdrs .cart_block_
 
 #order_review_heading {
   display: none;
+}
+
+.banner_btn {
+  background: transparent !important;
+  color: #4370B5 !important;
+  font-size: 14px !important;
 }/*# sourceMappingURL=styles.css.map */
