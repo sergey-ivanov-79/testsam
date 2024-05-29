@@ -36,8 +36,6 @@
   color: #231F20;
   font-size: 15px;
   line-height: 1.4;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 .osdrs *,
 .osdrs *::before,
@@ -2018,7 +2016,7 @@
 
 form.woocommerce-checkout {
   display: flex;
-  margin: 0 -15px;
+  flex-wrap: wrap;
 }
 @media (max-width: 767.98px) {
   form.woocommerce-checkout {
@@ -2055,17 +2053,91 @@ form.woocommerce-checkout .woocommerce-checkout-review-order .osdrs .col-md-6 {
 }
 form.woocommerce-checkout .woocommerce-checkout-review-order .osdrs .cart_block {
   margin-bottom: 0;
+  padding: 15px 30px;
 }
 form.woocommerce-checkout .woocommerce-checkout-review-order .osdrs .cart_block__inner {
   max-width: 512px;
+}
+
+.woocommerce-NoticeGroup-checkout {
+  margin-bottom: 25px;
 }
 
 #order_review_heading {
   display: none;
 }
 
+.my_account_orders.account-orders-table {
+  padding: 25px;
+}
+.my_account_orders.account-orders-table thead tr th {
+  font-size: 13px;
+}
+.my_account_orders.account-orders-table thead tr th:first-child {
+  padding-left: 0;
+}
+.my_account_orders.account-orders-table .osdrs {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.my_account_orders.account-orders-table .osdrs .exam_information__item {
+  padding-left: 0;
+  padding-right: 0;
+}
+.my_account_orders.account-orders-table .osdrs .exam_information__item:after {
+  display: none;
+}
+.my_account_orders.account-orders-table .osdrs .text-md {
+  font-size: 12px;
+}
+.my_account_orders.account-orders-table .osdrs .mb-15 {
+  margin-bottom: 7px;
+}
+.my_account_orders.account-orders-table tr td {
+  vertical-align: text-top;
+}
+.my_account_orders.account-orders-table tr td.woocommerce-orders-table__cell-order-actions .button {
+  font-size: 13px;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.woocommerce-table--order-downloads .button {
+  font-size: 12px !important;
+}
+
+.edit-account p {
+  text-align: right;
+}
+.edit-account p .woocommerce-Button {
+  margin-top: 15px;
+}
+
 .banner_btn {
   background: transparent !important;
   color: #4370B5 !important;
   font-size: 14px !important;
+}
+
+.alert {
+  position: relative;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }/*# sourceMappingURL=styles.css.map */

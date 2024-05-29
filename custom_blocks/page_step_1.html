@@ -5,10 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Step 1</title>
     <link href="./css/styles.css" rel="stylesheet">
+    <style>
+      .alert {
+        position: relative;
+        padding: 15px 20px;
+        border: 1px solid transparent;
+        margin-bottom: 20px;
+      }
+      .alert-success {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+      }
+      .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+      }
+    </style>
   </head>
   <body class="bg_gray">
     <div class="osdrs">
       <div class="container">
+        <div class="alert alert-success" role="alert">
+          A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+          A simple danger alert—check it out!
+        </div>
         <div class="box_white_block">
           <div class="container_lg ml-auto mr-auto">
             <a href="#" class="to_back">

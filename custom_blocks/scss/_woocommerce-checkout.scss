@@ -1,6 +1,7 @@
 form.woocommerce-checkout {
   display: flex;
-  margin: 0 -15px;
+  flex-wrap: wrap;
+  // margin: 0 -15px;
   @media (max-width: 767.98px) {
     flex-direction: column;
   }
@@ -30,6 +31,7 @@ form.woocommerce-checkout {
       }
       .cart_block {
         margin-bottom: 0;
+        padding: 15px 30px;
       }
       .cart_block__inner {
         max-width: 512px;
@@ -37,11 +39,83 @@ form.woocommerce-checkout {
     }
   }
 }
+.woocommerce-NoticeGroup-checkout {
+  margin-bottom: 25px;
+}
 #order_review_heading {
   display: none;
+}
+.my_account_orders.account-orders-table {
+  padding: 25px;
+  thead tr th {
+    font-size: 13px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  .osdrs {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    .exam_information__item {
+      padding-left: 0;
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+    .text-md {
+      font-size: 12px;
+    }
+    .mb-15 {
+      margin-bottom: 7px;
+    }
+  } 
+  tr {
+    td {
+      vertical-align: text-top;
+      &.woocommerce-orders-table__cell-order-actions {
+        .button {
+          font-size: 13px;
+          line-height: 1;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          height: 30px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+.woocommerce-table--order-downloads .button {
+  font-size: 12px !important;
+}
+.edit-account {
+  p {
+    text-align: right;
+    .woocommerce-Button {
+      margin-top: 15px;
+    }
+  }
 }
 .banner_btn {
   background: transparent !important;
   color: #4370B5 !important;
   font-size: 14px !important;
+}
+.alert {
+  position: relative;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
 }
