@@ -5,28 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Step 1</title>
     <link href="./css/styles.css" rel="stylesheet">
-    <style>
-      .alert {
-        position: relative;
-        padding: 15px 20px;
-        border: 1px solid transparent;
-        margin-bottom: 20px;
-      }
-      .alert-success {
-        color: #155724;
-        background-color: #d4edda;
-        border-color: #c3e6cb;
-      }
-      .alert-danger {
-        color: #721c24;
-        background-color: #f8d7da;
-        border-color: #f5c6cb;
-      }
-    </style>
   </head>
   <body class="bg_gray">
     <div class="osdrs">
       <div class="container">
+        <button id="openBtn">OPEN</button>
+        
         <div class="alert alert-success" role="alert">
           A simple success alert—check it out!
         </div>
@@ -57,7 +41,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="disabled">
                     <td rowspan="3" class="table__td table__td_first">
                       <img class="img-fluid level_block" src="./img/icon/icon-ZA2.svg" alt="">
                     </td>
@@ -173,7 +157,68 @@
         </div>
         
       </div>
+
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div></div>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div class="wrapper_basket">
+                <div class="basket_block">
+                  <img class="basket_img" src="./img/png/shopping-cart.png" alt="cart">
+                  <div class="circle_icon">5</div>
+                </div>
+              </div>
+              <p>
+                <b>Notice:</b> There are still regular products in your basket. Continuing to book exam dates will clear your basket. To complete the purchase of the items in your basket, please do so before proceeding with booking exam dates.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn_custom btn_custom_gray btn_custom_gray_dop btn_custom_radius">Go to basket</button>
+              <button class="btn_custom btn_custom_blue btn_custom_radius">Continue booking the exam date ›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <div id="modalbackdrop" class="modal-backdrop fade"></div>
+
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("openBtn");
+      var body = document.body;
+      var backdrop = document.getElementById("modalbackdrop");
+      var close = document.getElementsByClassName("close")[0];
+  
+      btn.onclick = function() {
+        modal.style.display = "block";
+        modal.classList.add("show");
+        body.classList.add("modal-open");
+        backdrop.classList.add("show");
+      }
+  
+      close.onclick = function() {
+        modal.style.display = "none";
+        modal.classList.remove("show");
+        body.classList.remove("modal-open");
+        backdrop.classList.remove("show");
+      }
+  
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          modal.classList.remove("show");
+          body.classList.remove("modal-open");
+          backdrop.classList.remove("show");
+        }
+      }
+    </script>
+    
     
   </body>
 </html>

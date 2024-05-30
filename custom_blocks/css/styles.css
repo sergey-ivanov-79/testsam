@@ -3,6 +3,38 @@
   background: #F4F4F4;
 }
 
+body {
+  margin: 0 !important;
+}
+body.modal-open {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: none;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+  display: block;
+}
+
 .osdrs {
   /***
       The new CSS reset - version 1.11.2 (last updated 15.11.2023)
@@ -919,6 +951,10 @@
 }
 .osdrs .btn_custom_gray:hover {
   background-color: #808080;
+}
+.osdrs .btn_custom_gray_dop {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .osdrs .btn_custom_big {
   max-width: 100%;
@@ -2013,6 +2049,113 @@
   align-items: center;
   margin-bottom: 35px;
 }
+.osdrs .modal-open {
+  overflow: hidden;
+  background: red !important;
+}
+.osdrs .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.osdrs .modal.show {
+  overflow: auto;
+}
+.osdrs .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block !important;
+}
+.osdrs .modal-dialog {
+  max-width: 600px;
+  margin: 1.75rem auto;
+  position: relative;
+  width: auto;
+  pointer-events: none;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+.osdrs .modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+.osdrs .modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.osdrs .modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+.osdrs .modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+.osdrs .modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem 1.5rem;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
+}
+@media (max-width: 479.98px) {
+  .osdrs .modal-footer .btn_custom {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.osdrs .close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: all 0.3s;
+}
+.osdrs .close:hover {
+  color: #000;
+  background-color: transparent;
+}
+.osdrs .close:hover,
+.osdrs .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 form.woocommerce-checkout {
   display: flex;
@@ -2140,4 +2283,35 @@ form.woocommerce-checkout .woocommerce-checkout-review-order .osdrs .cart_block_
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
+}
+
+.disabled td:not(.table__td_first) {
+  opacity: 0.3;
+}
+
+.wrapper_basket {
+  text-align: center;
+}
+.wrapper_basket .basket_block {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.wrapper_basket .basket_block .basket_img {
+  max-width: 52px;
+}
+.wrapper_basket .basket_block .circle_icon {
+  position: absolute;
+  border-radius: 100px;
+  right: -5px;
+  top: 0px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #F24726;
 }/*# sourceMappingURL=styles.css.map */

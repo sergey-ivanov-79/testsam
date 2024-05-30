@@ -119,3 +119,34 @@ form.woocommerce-checkout {
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
+.disabled {
+  td:not(.table__td_first) {
+    opacity: 0.3;
+  }
+}
+.wrapper_basket {
+  text-align: center;
+  .basket_block {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    .basket_img {
+      max-width: 52px;
+    }
+    .circle_icon {
+      position: absolute;
+      border-radius: 100px;
+      right: -5px;
+      top: 0px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: #F24726;
+    }
+  }
+}
