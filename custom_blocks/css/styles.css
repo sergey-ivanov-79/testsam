@@ -211,13 +211,13 @@ body.modal-open {
   min-height: 100%;
 }
 .osdrs .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .osdrs .text-center {
   text-align: center !important;
 }
 .osdrs .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 .osdrs .row {
   display: -ms-flexbox;
@@ -1126,6 +1126,7 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #4370B5;
   font-size: 15px;
   font-weight: 600;
@@ -1156,6 +1157,7 @@ body.modal-open {
   font-weight: 700;
   min-width: 80px;
   text-align: left;
+  white-space: nowrap;
 }
 .osdrs .text_seats span {
   color: #AEAEAE;
@@ -1711,6 +1713,7 @@ body.modal-open {
   min-width: 48px;
 }
 .osdrs .popover_block {
+  display: none;
   position: absolute;
   bottom: -62px;
   right: 0;
@@ -1727,6 +1730,9 @@ body.modal-open {
 }
 .osdrs .popover_block_left .popover_arrow:after {
   left: 22%;
+}
+.osdrs .popover_block.active {
+  display: block;
 }
 .osdrs .popover_arrow:after {
   content: "";

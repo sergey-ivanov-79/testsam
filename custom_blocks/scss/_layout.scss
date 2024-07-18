@@ -35,13 +35,13 @@ body,html {
   min-height: 100%;
 }
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 .text-center {
   text-align: center !important;
 }
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 .row {
   display: -ms-flexbox;

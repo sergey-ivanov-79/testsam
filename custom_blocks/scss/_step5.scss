@@ -254,6 +254,7 @@
   min-width: 48px;
 }
 .popover_block {
+  display: none;
   position: absolute;
   bottom: -62px;
   right: 0;
@@ -269,6 +270,9 @@
     .popover_arrow:after {
       left: 22%;
     }
+  }
+  &.active {
+    display: block;
   }
 }
 .popover_arrow:after {

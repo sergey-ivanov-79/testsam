@@ -134,6 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #4370B5;
   font-size: 15px;
   font-weight: 600;
@@ -164,6 +165,7 @@
   font-weight: 700;    
   min-width: 80px;
   text-align: left;
+  white-space: nowrap;
   span {
     color: #AEAEAE;
     font-weight: 400;
