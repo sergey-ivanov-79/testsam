@@ -68,6 +68,17 @@
     gap: 12px;
     margin-bottom: 16px;
   }
+  &_red {
+    border: 1px solid #F58870;
+    background: #FFDEC8;
+  }
+  &_blue {
+    border: 1px solid #77BCF0;
+    background: #D3E6ED;
+  }
+  &_big_radius {
+    border-radius: 10px;
+  }
 }
 .attention_img {
   width: 32px;
@@ -86,6 +97,11 @@
     @media (max-width: 991.98px) {
       padding: 15px;
     }
+  }
+  &_row {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .detaials_block {
@@ -151,19 +167,22 @@
   padding-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
   width: 100%;
   &__inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #FFF;
-    padding: 12px 15px;
+    padding: 10px 15px;
     border-radius: 4px;
     width: 100%;
-    gap: 20px;
+    gap: 14px;
   }
   &__user {
-    width: 38%;
+    width: 35%;
+    // min-width: 210px;
+    // max-width: 210px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -172,15 +191,16 @@
     }
   }
   &__module {
-    width: 47%;
-    min-width: 310px;
+    // width: 50%;
+    padding: 0 8px;
   }
   &__edit {
-    width: 15%;
+    // width: 16%;
+    min-width: 110px;
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 20px;
+    gap: 14px;
   }
   &__foto {
     background-image: url('../img/png/user_default.png');
@@ -188,16 +208,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 40px;
-    width: 46px;
-    height: 46px;
-    min-width: 46px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 100px;
   }
   &__name {
     color: #252525;
     font-size: 15px;
     font-weight: 700;
     line-height: 1.2;
-    white-space: nowrap;
+    // white-space: nowrap;
   }
   &.cancelled {
     .candidates__inner {
@@ -259,7 +280,6 @@
   bottom: -62px;
   right: 0;
   z-index: 1060;
-  display: block;
   width: 450px;
   max-width: 100%;
   &_left {
@@ -271,7 +291,7 @@
       left: 22%;
     }
   }
-  &.active {
+  &_active {
     display: block;
   }
 }
@@ -296,4 +316,28 @@
 }
 .popover_img {
   width: 32px;
+}
+.missing_candidate {
+  background-color: #e22929;
+  border: 1px solid #be1818;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+.submitted_candidate {
+  background-color: #CAF0CB;
+  border: 1px solid #5E8D61;
+  color: #000;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+.overdue_candidate {
+  border: 1px solid #F29D38;
+  background: #FCE8A0;
+  color: #000;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
 }

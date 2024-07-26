@@ -883,6 +883,10 @@ body.modal-open {
 }
 .osdrs .module_info {
   display: flex;
+  margin-bottom: 8px;
+}
+.osdrs .module_info:last-child {
+  margin-bottom: 0px;
 }
 .osdrs .module_info__item {
   width: 33.33%;
@@ -1518,6 +1522,17 @@ body.modal-open {
   gap: 12px;
   margin-bottom: 16px;
 }
+.osdrs .attention_block_red {
+  border: 1px solid #F58870;
+  background: #FFDEC8;
+}
+.osdrs .attention_block_blue {
+  border: 1px solid #77BCF0;
+  background: #D3E6ED;
+}
+.osdrs .attention_block_big_radius {
+  border-radius: 10px;
+}
 .osdrs .attention_img {
   width: 32px;
 }
@@ -1540,6 +1555,11 @@ body.modal-open {
   .osdrs .white_box_min {
     padding: 15px;
   }
+}
+.osdrs .white_box_row {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .osdrs .detaials_block {
   display: flex;
@@ -1606,20 +1626,21 @@ body.modal-open {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
   width: 100%;
 }
 .osdrs .candidates__inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #FFF;
-  padding: 12px 15px;
+  padding: 10px 15px;
   border-radius: 4px;
   width: 100%;
-  gap: 20px;
+  gap: 14px;
 }
 .osdrs .candidates__user {
-  width: 38%;
+  width: 35%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1630,15 +1651,14 @@ body.modal-open {
   }
 }
 .osdrs .candidates__module {
-  width: 47%;
-  min-width: 310px;
+  padding: 0 8px;
 }
 .osdrs .candidates__edit {
-  width: 15%;
+  min-width: 110px;
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 20px;
+  gap: 14px;
 }
 .osdrs .candidates__foto {
   background-image: url("../img/png/user_default.png");
@@ -1646,16 +1666,16 @@ body.modal-open {
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 40px;
-  width: 46px;
-  height: 46px;
-  min-width: 46px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 100px;
 }
 .osdrs .candidates__name {
   color: #252525;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.2;
-  white-space: nowrap;
 }
 .osdrs .candidates.cancelled .candidates__inner {
   opacity: 0.5;
@@ -1718,7 +1738,6 @@ body.modal-open {
   bottom: -62px;
   right: 0;
   z-index: 1060;
-  display: block;
   width: 450px;
   max-width: 100%;
 }
@@ -1731,7 +1750,7 @@ body.modal-open {
 .osdrs .popover_block_left .popover_arrow:after {
   left: 22%;
 }
-.osdrs .popover_block.active {
+.osdrs .popover_block_active {
   display: block;
 }
 .osdrs .popover_arrow:after {
@@ -1755,6 +1774,30 @@ body.modal-open {
 }
 .osdrs .popover_img {
   width: 32px;
+}
+.osdrs .missing_candidate {
+  background-color: #e22929;
+  border: 1px solid #be1818;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+.osdrs .submitted_candidate {
+  background-color: #CAF0CB;
+  border: 1px solid #5E8D61;
+  color: #000;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+.osdrs .overdue_candidate {
+  border: 1px solid #F29D38;
+  background: #FCE8A0;
+  color: #000;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 3px 5px;
 }
 .osdrs .exam_information {
   display: flex;
