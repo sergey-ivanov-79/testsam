@@ -151,6 +151,13 @@
 }
 .candidate_block_item {
   margin-bottom: 20px;
+  .candidates {
+    .module_item {
+      .text {
+        font-size: 13px;
+      }
+    }
+  }
 }
 .black_top_line {
   padding: 14px 15px;
@@ -200,7 +207,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 14px;
+    gap: 10px;
   }
   &__foto {
     background-image: url('../img/png/user_default.png');
@@ -212,10 +219,16 @@
     height: 40px;
     min-width: 40px;
     border-radius: 100px;
+    img {
+      border-radius: 100%;
+      object-fit: cover;
+      width: 40px;
+      height: 40px;
+    }
   }
   &__name {
     color: #252525;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
     // white-space: nowrap;
@@ -229,8 +242,9 @@
 .module_item {
   border-radius: 4px;
   background: rgba(67, 112, 181, 0.10);
-  padding: 10px;
+  padding: 5px 10px;
   display: flex;
+  align-items: center;
   justify-content: start;
   gap: 10px;
   margin-bottom: 5px;
@@ -239,10 +253,16 @@
   &:last-child {
     margin-bottom: 0;
   }
+  img {
+    max-width: 26px;
+  }
 }
 .check_green {
-  width: 34px;
-  min-width: 34px;
+  width: 20px;
+  min-width: 20px;
+  + .text-md {
+    font-size: 14px;
+  }
 }
 .submitting_block {
   padding: 25px 20px;
